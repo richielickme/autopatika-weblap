@@ -1,0 +1,190 @@
+@media print {
+
+    .site-header,
+    nav,
+    #styleswitch,
+    .skip-link,
+    .nav-cards-section,
+    .btn-torol,
+    .btn-elkuldes,
+    .map-section,
+    .navbar-toggler {
+        display: none !important;
+    }
+
+    video,
+    iframe {
+        display: none !important;
+    }
+
+    img {
+        max-width: 40% !important;
+        height: auto !important;
+    }
+
+    .banner-figure img {
+        max-width: 60% !important;
+        max-height: 12rem !important;
+        object-fit: cover;
+    }
+
+    .app-icon,
+    .store-badge {
+        max-width: 5rem !important;
+        height: auto !important;
+    }
+
+    .service-img-gallery img {
+        max-width: 30% !important;
+        height: auto !important;
+        display: inline-block;
+    }
+
+    body {
+        font-size: 10pt;
+        color: #000;
+        background-color: #fff;
+        font-family: Arial, sans-serif;
+        line-height: 1.4;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #000000;
+        page-break-after: avoid;
+    }
+
+    p,
+    ul,
+    ol {
+        orphans: 3;
+        widows: 3;
+    }
+
+    .container,
+    .container-fluid,
+    .container-lg {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .row {
+        display: block !important;
+    }
+
+    [class*="col-"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: none !important;
+    }
+
+    footer {
+        background-color: #fff !important;
+        color: #000000 !important;
+        border-top: 1px solid #000000;
+        padding: 0.5rem 0 !important;
+    }
+
+    footer h5 {
+        color: #000000 !important;
+    }
+
+    footer a {
+        color: #000000 !important;
+    }
+
+    .footer-copy {
+        color: #000000 !important;
+    }
+
+    a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.75em;
+        color: #444444;
+    }
+
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after,
+    a[href^="tel:"]::after,
+    a[href^="mailto:"]::after {
+        content: "";
+    }
+
+    .idopontfoglalas-section {
+        background-image: none !important;
+        background-color: #f0f0f0 !important;
+        padding: 1rem 0 !important;
+    }
+
+    .idopontfoglalas-overlay {
+        background-color: #f0f0f0 !important;
+        color: #000000 !important;
+        border: 1px solid #999999;
+    }
+
+    .idopontfoglalas-overlay h2,
+    .idopontfoglalas-overlay p {
+        color: #000000 !important;
+    }
+
+    .contact-info-block {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border: 1px solid #000000;
+    }
+
+    .contact-label {
+        color: #333333 !important;
+    }
+
+    .contact-info-block a {
+        color: #000000 !important;
+    }
+
+    .table-szolgaltatas th {
+        background-color: #dddddd !important;
+        color: #000000 !important;
+        print-color-adjust: exact;
+    }
+
+    .table-szolgaltatas tr:nth-child(even) td {
+        background-color: #f5f5f5 !important;
+        print-color-adjust: exact;
+    }
+
+    .app-icon {
+        display: none !important;
+    }
+
+    .video-section {
+        display: none !important;
+    }
+
+    .nav-cards-section {
+        display: none !important;
+    }
+
+    .service-section {
+        page-break-inside: avoid;
+        background-color: #ffffff !important;
+    }
+
+    .nyitvatartas-aside {
+        border-left: 3px solid #000000 !important;
+        background-color: #ffffff !important;
+    }
+
+    details {
+        border: 1px solid #cccccc !important;
+        background-color: #ffffff !important;
+    }
+
+    details[open] .details-tartalom {
+        display: block !important;
+    }
+}

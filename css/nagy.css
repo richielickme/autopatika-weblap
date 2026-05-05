@@ -1,0 +1,320 @@
+body {
+    font-size: 1.25rem !important;
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ffdd00 !important;
+}
+
+a {
+    color: #ffdd00 !important;
+    text-decoration: underline !important;
+}
+
+a:visited {
+    color: #111111 !important;
+}
+
+a:hover,
+a:focus {
+    color: #ffffff !important;
+    background-color: #333333 !important;
+    outline: 2px solid #ffdd00 !important;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #ffdd00 !important;
+}
+
+.site-header {
+    background-color: #000000 !important;
+    border-bottom: 3px solid #ffdd00 !important;
+}
+
+#styleswitch {
+    background-color: #000000 !important;
+    border-bottom: 2px solid #ffdd00 !important;
+}
+
+.navbar {
+    background-color: #000000 !important;
+}
+
+.navbar-brand-text {
+    color: #ffdd00 !important;
+    font-size: 1.8rem !important;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-size: 1.2rem !important;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+    color: #ffdd00 !important;
+    border-bottom-color: #ffdd00 !important;
+}
+
+.skip-link {
+    background-color: #ffdd00 !important;
+    color: #000000 !important;
+    font-size: 1.2rem !important;
+}
+
+.section-title {
+    color: #ffdd00 !important;
+    border-left-color: #ffdd00 !important;
+    font-size: 2.2rem !important;
+}
+
+.banner-figure figcaption {
+    background: #000000e6 !important;
+    color: #ffdd00 !important;
+    font-size: 1.1rem !important;
+}
+
+.idopontfoglalas-section {
+    background-image: none !important;
+    background-color: #111111 !important;
+}
+
+.idopontfoglalas-overlay {
+    background-color: #111111 !important;
+    border: 2px solid #ffdd00;
+}
+
+.idopontfoglalas-overlay h2 {
+    color: #ffdd00 !important;
+    font-size: 2.2rem !important;
+}
+
+.idopontfoglalas-overlay p {
+    color: #ffffff !important;
+    font-size: 1.2rem !important;
+}
+
+.app-section {
+    background-color: #111111 !important;
+}
+
+.video-section {
+    background-color: #111111 !important;
+}
+
+figcaption {
+    color: #cccccc !important;
+    font-size: 1rem !important;
+}
+
+details {
+    background-color: #222222 !important;
+    border-color: #555555 !important;
+}
+
+details summary {
+    color: #ffdd00 !important;
+    font-size: 1.15rem !important;
+}
+
+details summary::before {
+    color: #ffdd00 !important;
+}
+
+.details-tartalom {
+    color: #ffffff !important;
+    font-size: 1.1rem !important;
+}
+
+.nav-cards-section {
+    background-color: #111111 !important;
+    border-top: 2px solid #ffdd00;
+    border-bottom: 2px solid #ffdd00;
+}
+
+.service-card {
+    background-color: #222222 !important;
+    border: 2px solid #555555;
+}
+
+.service-card-label {
+    background-color: #333333 !important;
+    color: #ffdd00 !important;
+    font-size: 1.2rem !important;
+}
+
+.service-section:nth-child(odd) {
+    background-color: #111111 !important;
+}
+
+.service-section:nth-child(even) {
+    background-color: #111111 !important;
+}
+
+.service-img-gallery figcaption {
+    color: #cccccc !important;
+}
+
+.table-szolgaltatas th {
+    background-color: #333333 !important;
+    color: #ffdd00 !important;
+    font-size: 1.1rem !important;
+}
+
+.table-szolgaltatas td {
+    color: #ffffff !important;
+    border-bottom-color: #555555 !important;
+    font-size: 1.05rem !important;
+}
+
+.table-szolgaltatas tr:nth-child(even) td {
+    background-color: #111111 !important;
+}
+
+.contact-section {
+    background-color: #111111 !important;
+}
+
+.contact-info-block {
+    background-color: #222222 !important;
+    border: 2px solid #ffdd00;
+}
+
+.contact-label {
+    color: #ffdd00 !important;
+    font-size: 0.9rem !important;
+}
+
+.contact-value {
+    color: #ffffff !important;
+    font-size: 1.1rem !important;
+}
+
+.contact-info-block a {
+    color: #ffdd00 !important;
+}
+
+.contact-info-block a:visited {
+    color: #ff7b00 !important;
+}
+
+.nyitvatartas-aside {
+    background-color: #111111 !important;
+    border-left-color: #ffdd00 !important;
+    color: #ffffff !important;
+}
+
+.nyitvatartas-aside h3 {
+    color: #ffdd00 !important;
+}
+
+.hours-table td {
+    color: #ffffff !important;
+    font-size: 1.1rem !important;
+}
+
+.btn-green,
+.btn-elkuldes {
+    background-color: #ffdd00 !important;
+    border-color: #ffdd00 !important;
+    color: #000 !important;
+    font-size: 1.2rem !important;
+}
+
+.btn-green:hover,
+.btn-green:focus,
+.btn-elkuldes:hover,
+.btn-elkuldes:focus {
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.btn-torol {
+    background-color: #333333 !important;
+    border-color: #ffffff !important;
+    color: #ffffff !important;
+    font-size: 1.2rem !important;
+}
+
+.form-label {
+    color: #ffdd00 !important;
+    font-size: 1.15rem !important;
+}
+
+.form-control {
+    background-color: #222222 !important;
+    color: #ffffff !important;
+    border-color: #ffdd00 !important;
+    font-size: 1.1rem !important;
+}
+
+.form-control:focus {
+    border-color: #ffdd00 !important;
+    box-shadow: 0 0 0 0.15rem #ffdd0066 !important;
+}
+
+.form-check-label {
+    color: #ffffff !important;
+    font-size: 1.1rem !important;
+}
+
+.map-section {
+    background-color: #111111 !important;
+}
+
+footer {
+    background-color: #111111 !important;
+    border-top: 3px solid #ffdd00;
+}
+
+footer h5 {
+    color: #ffdd00 !important;
+}
+
+footer a {
+    color: #ffdd00 !important;
+}
+
+footer a:visited {
+    color: #ff7b00 !important;
+}
+
+.table-szolgaltatas tr td {
+    background-color: #111111 !important;
+}
+
+.footer-divider {
+    border-top-color: #555555 !important;
+}
+
+.footer-copy {
+    color: #cccccc !important;
+    font-size: 1rem !important;
+}
+
+li {
+    font-size: 1.1rem !important;
+}
+
+p {
+    font-size: 1.1rem !important;
+    color: #ffffff !important;
+}
+
+.varakozas {
+    color: #ffdd00 !important;
+}
+
+.nyitvatartas-section {
+    background-color: #333333 !important;
+}

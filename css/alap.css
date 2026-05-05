@@ -1,0 +1,805 @@
+:root {
+    --tengerszin: #25314B;
+    --zold: #486803;
+    --vilagos: #f4f6fb;
+    --szoveg: #222222;
+    --latogatott: #7a9e2e;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--szoveg);
+    background-color: #ffffff;
+    margin: 0;
+}
+
+/* Alap cuccok */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    color: var(--tengerszin);
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+p {
+    margin-top: 0;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+ul,
+ol {
+    padding-left: 1.4rem;
+}
+
+li {
+    margin-bottom: 0.3rem;
+}
+
+/* Linkek */
+
+a {
+    color: var(--zold);
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--latogatott);
+    text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+    color: var(--tengerszin);
+    text-decoration: underline;
+}
+
+/* Nav linkek */
+.nav-link,
+.service-card,
+.btn-green,
+.btn-torol,
+.btn-elkuldes {
+    text-decoration: none;
+}
+
+.service-card:visited {
+    color: inherit;
+}
+
+.navbar .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar .nav-link:hover {
+    color: #d1d1d1 !important;
+}
+
+.navbar .nav-link.active {
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+
+
+/* Skip link resy */
+
+.skip-link {
+    position: absolute;
+    top: -5rem;
+    left: 1rem;
+    background-color: var(--zold);
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    z-index: 9999;
+    border-radius: 0 0 0.375rem 0.375rem;
+    transition: top 0.2s;
+}
+
+.skip-link:focus {
+    top: 0;
+    color: #ffffff;
+}
+
+/* Styleswitch */
+
+#styleswitch {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem 1rem;
+    background-color: #111d30;
+    font-size: 0.875rem;
+    color: #bbbbbb;
+    border-bottom: 1px solid #ffffff1a;
+}
+
+#styleswitch label {
+    margin: 0;
+    color: #bbbbbb;
+}
+
+#styleswitch select {
+    font-size: 0.85rem;
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.2rem;
+}
+
+/* Fejléc */
+
+.site-header {
+    background-color: var(--tengerszin);
+}
+
+.navbar-brand-text {
+    font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #ffffff !important;
+}
+.navbar-brand {
+    text-decoration: none !important;
+}
+
+footer a:hover, footer a:focus {
+    color: #96d908 !important;
+}
+
+.nav-link {
+    font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: #ffffffd9;
+    padding: 0.5rem 0.8rem;
+    transition: color 0.2s;
+    border-bottom: 0.2rem solid transparent;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--zold);
+}
+
+.nav-link.active {
+    color: #ffffff;
+    border-bottom-color: #96d908;
+}
+
+/* Section cím  */
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    border-left: 0.3rem solid var(--zold);
+    padding-left: 0.75rem;
+    margin-bottom: 1.25rem;
+    color: var(--tengerszin);
+}
+
+/* Banner */
+
+.banner-figure {
+    margin: 0;
+    position: relative;
+    max-height: 28rem;
+    overflow: hidden;
+}
+
+.banner-figure img {
+    width: 100%;
+    height: 28rem;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-figure figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, #000000a6 0%, transparent 100%);
+    color: #ffffff;
+    padding: 1.5rem 2rem 1rem;
+    font-size: 1rem;
+    font-style: normal;
+}
+
+/* háttérkép, idopontfoglalas */
+
+.idopontfoglalas-section {
+    background-image: url('../media/feherhatter.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    padding: 4rem 0;
+    position: relative;
+}
+
+.idopontfoglalas-overlay {
+    background-color: #1c2b4ad1;
+    border-radius: 0.75rem;
+    padding: 2.5rem;
+    color: #ffffff;
+}
+
+.idopontfoglalas-overlay h2 {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.idopontfoglalas-overlay p {
+    font-size: 1.1rem;
+    color: #dde4f0;
+    margin-bottom: 1.5rem;
+}
+
+/* App */
+
+.app-section {
+    padding: 3rem 0;
+    background-color: #ffffff;
+}
+
+.app-icon {
+    max-width: 15rem;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.store-badge {
+    height: 7rem;
+    width: auto;
+    display: inline-block;
+}
+
+/* Videó */
+
+.video-section {
+    background-color: var(--vilagos);
+    padding: 3rem 0;
+}
+
+.video-section figure {
+    max-width: 50rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.video-section video {
+    width: 100%;
+    border-radius: 0.5rem;
+    display: block;
+}
+
+.video-section details {
+    max-width: 50rem;
+    margin: 1.5rem auto 0 auto;
+}
+
+video {
+    width: 100%;
+    border-radius: 0.5rem;
+    display: block;
+    max-width: 50rem;
+}
+
+/* Figure, figcaption */
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-size: 0.875rem;
+    color: #555;
+    margin-top: 0.4rem;
+    font-style: italic;
+}
+
+/* Details, Summary*/
+
+details {
+    margin-top: 1rem;
+    border: 1px solid #dde2ec;
+    border-radius: 0.375rem;
+    padding: 0.75rem 1rem;
+    background-color: #ffffff;
+}
+
+details summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--tengerszin);
+    list-style: none;
+    user-select: none;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details summary::before {
+    content: '\25B6  ';
+    font-size: 0.75rem;
+    color: var(--zold);
+}
+
+details[open] summary::before {
+    content: '\25BC  ';
+}
+
+details .details-tartalom {
+    margin-top: 0.75rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Thumbnail */
+
+.thumbnail-link {
+    display: block;
+    overflow: hidden;
+    border-radius: 0.4rem;
+    transition: opacity 0.2s;
+    text-decoration: none;
+}
+
+.thumbnail-link:hover,
+.thumbnail-link:focus {
+    opacity: 0.85;
+}
+
+.thumbnail-link img {
+    width: 100%;
+    height: 13rem;
+    object-fit: cover;
+    display: block;
+    border-radius: 0.4rem;
+    transition: transform 0.3s;
+}
+
+.thumbnail-link:hover img,
+.thumbnail-link:focus img {
+    transform: scale(1.04);
+}
+
+/* 6-os menu */
+
+.nav-cards-section {
+    background-color: var(--tengerszin);
+    padding: 2.5rem 0;
+}
+
+.service-card {
+    display: block;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.625rem #0000002e;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: var(--tengerszin);
+    color: #ffffff;
+}
+
+.service-card:hover,
+.service-card:focus {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.375rem 1.25rem #00000047;
+}
+
+.service-card img {
+    width: 100%;
+    height: 11rem;
+    object-fit: cover;
+    display: block;
+    color: #ffffff
+}
+
+.service-card-label {
+    color: #ffffff;
+    font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.55rem 0.5rem;
+    letter-spacing: 0.03em;
+    display: block;
+}
+
+/* Szolgáltatás rész */
+
+.service-section {
+    padding: 3rem 0;
+}
+
+.service-section:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.service-section:nth-child(even) {
+    background-color: var(--vilagos);
+}
+
+.service-img-gallery figure {
+    margin: 0;
+}
+
+.service-img-gallery img {
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 0.375rem;
+    display: block;
+}
+
+.service-img-gallery figcaption {
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+}
+
+/* Táblázat */
+
+.table-szolgaltatas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.table-szolgaltatas th {
+    background-color: var(--tengerszin);
+    color: #ffffff;
+    font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.6rem 0.75rem;
+    text-align: left;
+}
+
+.table-szolgaltatas td {
+    vertical-align: middle;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #dde2ec;
+    font-size: 0.95rem;
+}
+
+.table-szolgaltatas tr:last-child td {
+    border-bottom: none;
+}
+
+.table-szolgaltatas tr td {
+    background-color: #ffffff;
+}
+
+/* Elérhetőség blokk */
+
+.contact-section {
+    padding: 3rem 0;
+    background-color: var(--vilagos);
+}
+
+.contact-info-block {
+    background-color: var(--tengerszin);
+    color: #ffffff;
+    border-radius: 0.625rem;
+    padding: 2rem;
+    height: 100%;
+}
+
+.contact-info-block a {
+    color: #d0d8e8;
+    text-decoration: underline;
+}
+
+.contact-info-block a:visited {
+    color: #a0adc0;
+}
+
+.contact-info-block a:hover,
+.contact-info-block a:focus {
+    color: #96d908;
+}
+
+.contact-label {
+    font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #96d908;
+    margin-bottom: 0.2rem;
+    display: block;
+}
+
+.contact-value {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+/* Aside – nyitvatartás */
+
+.nyitvatartas-aside {
+    background-color: #ffffff;
+    border-radius: 0.625rem;
+    padding: 1.5rem 2rem;
+    border-left: 0.3rem solid var(--zold);
+    height: 100%;
+}
+
+.nyitvatartas-section {
+    background-color: var(--vilagos);
+}
+
+.nyitvatartas-aside h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hours-table td {
+    padding: 0.3rem 0;
+    vertical-align: top;
+    font-size: 1rem;
+}
+
+.hours-table td:first-child {
+    font-weight: 600;
+    padding-right: 1.5rem;
+    white-space: nowrap;
+}
+
+/*Bankkártya */
+
+.bankcard-img {
+    max-height: 4rem;
+    width: auto;
+    display: block;
+    margin-top: 1rem;
+}
+
+/* Gombok */
+
+.btn-green {
+    background-color: var(--zold);
+    border: 1rem solid var(--zold);
+    color: #ffffff;
+    font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.55rem 1.6rem;
+    border-radius: 0.375rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn-green:hover,
+.btn-green:focus {
+    background-color: #34480a;
+    border-color: #1c2608;
+    color: #ffffff;
+}
+
+.btn-green:visited {
+    color: #ffffff;
+}
+
+.btn-torol {
+    background-color: var(--tengerszin);
+    border: 0.125rem solid var(--tengerszin);
+    color: #ffffff;
+    font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 0.55rem 1.8rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-torol:hover,
+.btn-torol:focus {
+    background-color: #111d30;
+    color: #ffffff;
+}
+
+.btn-elkuldes {
+    background-color: var(--zold);
+    border: 0.125rem solid var(--zold);
+    color: #ffffff;
+    font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 0.55rem 1.8rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-elkuldes:hover,
+.btn-elkuldes:focus {
+    background-color: #96d908;
+    color: #ffffff;
+}
+
+/* --- Lábléc --- */
+
+footer {
+    background-color: var(--tengerszin);
+    color: #d0d8e8;
+    padding: 2rem 0 1rem;
+}
+
+footer h3 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+}
+
+footer a {
+    color: #d0d8e8;
+    text-decoration: underline;
+}
+
+footer a:visited {
+    color: #a0adc0;
+}
+
+footer a:hover,
+footer a:focus {
+    color: var(--zold);
+}
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid #ffffff26;
+    margin: 1.5rem 0 1rem;
+}
+
+.footer-copy {
+    font-size: 0.85rem;
+    color: #8a9bbf;
+    text-align: center;
+    margin: 0;
+}
+
+/* Media */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    max-width: 100%;
+    display: block;
+}
+
+.logo-img {
+    max-height: 5rem;
+    width: auto;
+}
+
+/* Űrlap */
+
+.form-label {
+    font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--tengerszin);
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    font-family: 'Barlow', Arial, sans-serif;
+    border: 1px solid #c5cfe0;
+    border-radius: 0.375rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background-color: #ffffff;
+    color: var(--szoveg);
+}
+
+.form-control:focus {
+    border-color: var(--tengerszin);
+    outline: 0;
+    box-shadow: 0 0 0 0.15rem #1c2b4a33;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.form-check-label {
+    margin: 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.form-mb {
+    margin-bottom: 1rem;
+}
+
+/* Google maps */
+
+.map-section {
+    padding: 3rem 0;
+    background-color: #ffffff;
+}
+
+.map-iframe {
+    width: 100%;
+    height: 22rem;
+    border: none;
+    border-radius: 0.5rem;
+    display: block;
+}
+
+
+
+/* Responsive */
+
+@media (max-width: 575px) {
+    .banner-figure img {
+        height: 16rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .service-card img {
+        height: 8rem;
+    }
+
+    .store-badge {
+        height: 4rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-info-block {
+        margin-bottom: 1.5rem;
+    }
+
+    .nyitvatartas-aside {
+        margin-top: 1.5rem;
+    }
+}

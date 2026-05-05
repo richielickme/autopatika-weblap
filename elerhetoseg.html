@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elérhetőség – Autópatika Bt.</title>
+    <link rel="icon" href="media/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="css/alap.css" rel="stylesheet">
+    <link href="css/print.css" rel="stylesheet" media="print">
+</head>
+<body>
+
+<a class="skip-link" href="#tartalom">Ugrás a tartalomra</a>
+
+<header class="site-header">
+    <nav id="styleswitch" aria-label="Stílusváltó" class="d-flex align-items-center gap-2">
+        <span class="text-white">Stílus:</span>
+        <div class="dropdown">
+            <button class="btn btn-dark dropdown-toggle border-warning text-warning" type="button" id="styleDropdownBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                Normál
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="styleDropdownBtn">
+                <li><a class="dropdown-item style-option" href="#" data-value="normal">Normál</a></li>
+                <li><a class="dropdown-item style-option" href="#" data-value="nagy">Nagy kontrasztú / nagy betűs</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark" aria-label="Főnavigáció">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="./index.html">
+                <img src="media/logo.png" alt="Autópatika logó" class="logo-img img-fluid">
+                <span class="navbar-brand-text">Autópatika</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFo" aria-controls="navbarFo" aria-expanded="false" aria-label="Navigáció megnyitása">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarFo">
+                <ul class="navbar-nav ms-auto gap-lg-1">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Kezdőlap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./szolgaltatasok.html">Szolgáltatások</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./elerhetoseg.html">Elérhetőség</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main id="tartalom">
+
+    <section class="contact-section" aria-labelledby="contact-cim">
+        <div class="container">
+            <h1 id="contact-cim" class="section-title">Elérhetőség</h1>
+            <p>Lépjen kapcsolatba velünk az alábbi vonalakon, vagy töltse ki az üzenetküldő űrlapot:</p>
+            <div class="row g-4">
+
+                <div class="col-12 col-lg-5">
+                    <aside class="contact-info-block" aria-label="Kapcsolattartási adatok">
+                        <div>
+                            <span class="contact-label">Telefonszám</span>
+                            <p class="contact-value">
+                                <a href="tel:+36925103451">+36 92 510 345</a><br>
+                                <a href="tel:+36309467857">+36 30 946 7857</a>
+                            </p>
+                        </div>
+                        <div>
+                            <span class="contact-label">E-mail</span>
+                            <p class="contact-value">
+                                <a href="mailto:autopatikazeg@gmail.com">autopatikazeg@gmail.com</a>
+                            </p>
+                        </div>
+                        <div>
+                            <span class="contact-label">Cím</span>
+                            <p class="contact-value">8900 Zalaegerszeg, Zrínyi út 34/A</p>
+                        </div>
+                        <div>
+                            <span class="contact-label" lang="en">Facebook</span>
+                            <p class="contact-value">
+                                <a href="https://www.facebook.com/p/Aut%C3%B3patika-100054547295102/" target="_blank" >Autópatika <span lang="en">Facebook</span>-oldala</a>
+                            </p>
+                        </div>
+                        <div>
+                            <span class="contact-label">Időpontfoglalás</span>
+                            <p class="contact-value mb-0">
+                                <a href="https://gumiszervizem.hu/szervizek/autopatika/" target="_blank" >Foglaljon időpontot <span lang="en">online</span></a>
+                            </p>
+                        </div>
+                    </aside>
+                </div>
+
+                <div class="col-12 col-lg-7">
+                    <article aria-label="Kapcsolatfelvételi űrlap">
+                        <h2 class="section-title">Küldjön üzenetet!</h2>
+                        <form action="mailto:autopatikazeg@gmail.com" method="post" enctype="text/plain">
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6 form-mb">
+                                    <label for="nev" class="form-label">Név</label>
+                                    <input type="text" class="form-control" id="nev" name="nev" placeholder="Teljes neve" maxlength="100" size="30" required>
+                                </div>
+                                <div class="col-12 col-sm-6 form-mb">
+                                    <label for="telefon" class="form-label">Telefonszám</label>
+                                    <input type="text" class="form-control" id="telefon" name="telefon" placeholder="+36 30 123 4567" maxlength="20" size="20">
+                                </div>
+                                <div class="col-12 form-mb">
+                                    <label for="email" class="form-label">E-mail cím</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="pelda@email.hu" maxlength="100" size="40" required>
+                                </div>
+                                <div class="col-12 form-mb">
+                                    <label for="uzenet" class="form-label">Üzenet</label>
+                                    <textarea class="form-control" id="uzenet" name="uzenet" rows="5" cols="50" maxlength="2000" placeholder="Az üzenete..." required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check form-mb">
+                                        <input type="checkbox" id="adatvedelem" name="adatvedelem" value="elfogadva" required>
+                                        <label class="form-check-label" for="adatvedelem">Az Adatvédelmi tájékoztatót elfogadom.*</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <p class="form-label mb-2">Milyen szolgáltatással kapcsolatban érdeklődik?</p>
+                                    <div class="form-check">
+                                        <input type="radio" id="szerviz" name="szolgaltatas" value="Gépjármű szervíz" required>
+                                        <label class="form-check-label" for="szerviz">Gépjármű szervíz</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" id="kereskedelem" name="szolgaltatas" value="Kereskedelem">
+                                        <label class="form-check-label" for="kereskedelem">Kereskedelem (gumiabroncs, felni, alkatrész)</label>
+                                    </div>
+                                    <div class="form-check form-mb">
+                                        <input type="radio" id="egyeb" name="szolgaltatas" value="Egyéb">
+                                        <label class="form-check-label" for="egyeb">Egyéb</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex flex-wrap gap-3">
+                                    <input type="reset" class="btn-torol" value="Törlés">
+                                    <input type="submit" class="btn-elkuldes" value="Elküldés">
+                                </div>
+                            </div>
+                        </form>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section" aria-labelledby="terkep-cim">
+        <div class="container">
+            <h2 id="terkep-cim" class="section-title">Térkép</h2>
+            <figure>
+                <iframe
+                    class="map-iframe"
+                    src="https://maps.google.com/maps?q=8900+Zalaegerszeg,+Zr%C3%ADnyi+Mikl%C3%B3s+utca+34%2FA&output=embed"
+                    title="Autópatika Bt. helyszíne a Google Térképen – Zalaegerszeg, Zrínyi Miklós utca 34/A"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+                <figcaption>Autópatika Bt. – 8900 Zalaegerszeg, Zrínyi Miklós utca 34/A</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="py-5 nyitvatartas-section" aria-labelledby="nyitva-cim">
+        <div class="container">
+            <div class="row g-4 align-items-start">
+                <div class="col-12 col-md-6">
+                    <aside class="nyitvatartas-aside" aria-labelledby="nyitva-cim">
+                        <h2 id="nyitva-cim" class="section-title">Nyitvatartás</h2>
+                        <table class="hours-table">
+                            <tbody>
+                                <tr>
+                                    <td>Hétfő–Péntek:</td>
+                                    <td><strong>8:00–16:30</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Szombat:</td>
+                                    <td><strong>8:00–12:00</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Vasárnap:</td>
+                                    <td><em>Zárva</em></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </aside>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="nyitvatartas-aside">
+                        <h2 class="section-title">Fizetési lehetőségek</h2>
+                        <p>Üzletünkben <strong>bankkártyás fizetést</strong> is elfogadunk. Partnerünk a következő kártyatársaságok kártyáit fogadja el:</p>
+                        <figure>
+                            <img src="media/bankkartya.png" alt="Elfogadott bankkártyák: Visa, Mastercard és Maestro logók" class="bankcard-img">
+                            <figcaption>Elfogadott bankkártyák: <span lang="en">Visa</span>, <span lang="en">Mastercard</span>, <span lang="en">Maestro</span></figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <div class="row gy-3">
+            <div class="col-12 col-md-6">
+                <h3>Autópatika</h3>
+                <address>
+                    <p class="mb-1">Zalaegerszeg, Zrínyi Miklós utca 34/A</p>
+                    <p class="mb-1"><a href="tel:+36309467857">06-30 / 946-7857</a></p>
+                    <p class="mb-0"><a href="mailto:autopatikazeg@gmail.com">autopatikazeg@gmail.com</a></p>
+                </address>
+            </div>
+            <div class="col-12 col-md-3">
+                <h3>Nyitvatartás</h3>
+                <p class="mb-1">Hétfő–Péntek: 8:00–16:30</p>
+                <p class="mb-1">Szombat: 8:00–12:00</p>
+                <p class="mb-0">Vasárnap: Zárva</p>
+            </div>
+            <div class="col-12 col-md-3">
+                <h3>Gyors linkek</h3>
+                <ul class="list-unstyled mb-0">
+                    <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+                    <li><a href="elerhetoseg.html">Elérhetőség</a></li>
+                    <li><a href="https://www.facebook.com/p/Aut%C3%B3patika-100054547295102/" target="_blank" ><span lang="en">Facebook</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <p class="footer-copy">© 2026 Autópatika Bt. – Minden jog fenntartva.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="js/styleswitch.js"></script>
+</body>
+</html>

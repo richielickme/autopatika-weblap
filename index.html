@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kezdőlap – Autópatika Bt.</title>
+    <link rel="icon" href="media/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="css/alap.css" rel="stylesheet">
+    <link href="css/print.css" rel="stylesheet" media="print">
+</head>
+<body>
+
+<a class="skip-link" href="#tartalom">Ugrás a tartalomra</a>
+
+<header class="site-header">
+    <nav id="styleswitch" aria-label="Stílusváltó" class="d-flex align-items-center gap-2">
+        <span class="text-white">Stílus:</span>
+        <div class="dropdown">
+            <button class="btn btn-dark dropdown-toggle border-warning text-warning" type="button" id="styleDropdownBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                Normál
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="styleDropdownBtn">
+                <li><a class="dropdown-item style-option" href="#" data-value="normal">Normál</a></li>
+                <li><a class="dropdown-item style-option" href="#" data-value="nagy">Nagy kontrasztú / nagy betűs</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark" aria-label="Főnavigáció">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="./index.html">
+                <img src="media/logo.png" alt="Autópatika logó" class="logo-img img-fluid">
+                <span class="navbar-brand-text">Autópatika</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFo" aria-controls="navbarFo" aria-expanded="false" aria-label="Navigáció megnyitása">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarFo">
+                <ul class="navbar-nav ms-auto gap-lg-1">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Kezdőlap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./szolgaltatasok.html">Szolgáltatások</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./elerhetoseg.html">Elérhetőség</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main id="tartalom">
+
+    <section aria-label="Az üzlet képe">
+        <figure class="banner-figure">
+            <img src="media/uzlet.png" alt="Az Autópatika Bt. zalaegerszegi üzletének külső képe, előtérben Sava és Fulda reklámzászlókkal">
+        </figure>
+    </section>
+
+    <section class="idopontfoglalas-section" aria-labelledby="idopontfoglalas-cim">
+        <div class="container">
+            <div class="idopontfoglalas-overlay">
+                <h2 id="idopontfoglalas-cim">Foglaljon időpontot <span lang="en">online!</span></h2>
+                <p>Foglaljon időpontot kényelmesen, <span lang="en">online</span>, külső partnerünkön keresztül! Nincs várakozás, nincs telefonálgatás – egyszerűen válasszon időpontot pár kattintással.</p>
+                <a href="https://gumiszervizem.hu/szervizek/autopatika/" class="btn-green" target="_blank" >Időpontfoglalás</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-section" aria-labelledby="app-cim">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-md-3 text-center">
+                    <figure>
+                        <img src="media/app_ikon.png" alt="Autópatika mobilalkalmazás ikonja – kék autó ikon zöld csavarkulccsal" class="app-icon">
+                        <figcaption>Autópatika mobilapp</figcaption>
+                    </figure>
+                </div>
+                <div class="col-12 col-md-9">
+                    <h2 id="app-cim" class="section-title">Töltse le mobilalkalmazásunkat!</h2>
+                    <p>Töltse le <strong>ingyenes mobilalkalmazásunkat</strong> a személyre szabott kiszolgálásért, kényelmes időpontfoglalásért. Értesítések, szerviznapló és akciók – mindig kéznél.</p>
+                    <div class="d-flex flex-wrap gap-3 mt-3">
+                        <a href="https://apps.apple.com/us/app/mypoint-s/id1455197785" target="_blank" >
+                            <img src="media/appstore.png" alt="Letöltés az App Store-ból – Apple készülékekre" class="store-badge">
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=hu.codevision.points" target="_blank" >
+                            <img src="media/googleplay.png" alt="Letöltés a Google Play-ről – Android készülékekre" class="store-badge">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section" aria-labelledby="video-cim">
+        <div class="container">
+            <h2 id="video-cim" class="section-title">Ismerje meg szervizünket egy percen belül!</h2>
+            <article aria-label="Bemutatkozó videó és szöveges leírása">
+                <figure>
+                    <video controls poster="media/video_poster.jpg">
+                        <source src="media/bemutato.mp4" type="video/mp4">
+                        <p>A böngészője nem támogatja a videó lejátszást.
+                            <a href="https://youtu.be/nXAgwSDYJnA" target="_blank" >Tekintse meg a videót a <span lang="en">YouTube</span>-on.</a>
+                        </p>
+                    </video>
+                    <figcaption>Autópatika bemutatkozó videó – szervizünk és szolgáltatásaink bemutatása</figcaption>
+                </figure>
+                <details>
+                    <summary>A videó szöveges leírása (akadálymentesített változat)</summary>
+                    <div class="details-tartalom">
+                        <p>A videó az Autópatika Bt. bemutatkozó felvétele, körülbelül 1 perc hosszú, egy férfi beszél, aki ismerteti a céget, a következő szöveg hangzik el:</p>
+                        <p>Üdvözöljük az Autópatika megújult weboldalán!</p>
+                        <p>Cégünk 1992 óta áll az Önök szolgálatában Zalaegerszegen.</p>
+                        <p>Büszkék vagyunk arra, hogy folyamatos fejlesztéseink révén ma már egy európai színvonalú, öt műhelyből álló telephelyen várjuk ügyfeleinket.</p>
+                        <p>Legyen szó személyautóról, motorról, kamionról vagy traktorról, nálunk a gumiabroncsok és felnik szerelése a legjobb kezekben van.</p>
+                        <p>Szervizünkben a kerékcsere során mindig alaposan átvizsgáljuk a járművet, így Ön pontos képet kap annak műszaki állapotáról.</p>
+                        <p>Ne feledje, a megfelelő állapotú abroncs akár életet is menthet!</p>
+                        <p>Kínálatunkban a gumiszerelés mellett megtalálható a korszerű lézeres futómű-beállítás, olajcsere, valamint klímatöltés és tisztítás is.</p>
+                        <p>Fedezze fel weboldalunkat, ismerje meg szolgáltatásainkat, és kérje ingyenes szaktanácsunkat képzett szakembereinktől.</p>
+                        <p>Foglaljon időpontot gyorsan és egyszerűen <span lang="en">online</span>, vagy keressen minket elérhetőségeinken.</p>
+                        <p>Várjuk szeretettel Zalaegerszegen!</p>
+                    </div>
+                </details>
+            </article>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <div class="row gy-3">
+            <div class="col-12 col-md-6">
+                <h3>Autópatika</h3>
+                <address>
+                    <p class="mb-1">Zalaegerszeg, Zrínyi Miklós utca 34/A</p>
+                    <p class="mb-1"><a href="tel:+36309467857">06-30 / 946-7857</a></p>
+                    <p class="mb-0"><a href="mailto:autopatikazeg@gmail.com">autopatikazeg@gmail.com</a></p>
+                </address>
+            </div>
+            <div class="col-12 col-md-3">
+                <h3>Nyitvatartás</h3>
+                <p class="mb-1">Hétfő–Péntek: 8:00–16:30</p>
+                <p class="mb-1">Szombat: 8:00–12:00</p>
+                <p class="mb-0">Vasárnap: Zárva</p>
+            </div>
+            <div class="col-12 col-md-3">
+                <h3>Gyors linkek</h3>
+                <ul class="list-unstyled mb-0">
+                    <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+                    <li><a href="elerhetoseg.html">Elérhetőség</a></li>
+                    <li><a href="https://www.facebook.com/p/Aut%C3%B3patika-100054547295102/" target="_blank" ><span lang="en">Facebook</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <p class="footer-copy">© 2026 Autópatika Bt. – Minden jog fenntartva.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="js/styleswitch.js"></script>
+</body>
+</html>
